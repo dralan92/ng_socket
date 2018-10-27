@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
       
     const socket = socketIo('http://localhost:3000');
 
-    socket.on('hello', (data)=>console.log(data));
+    socket.on('log', (data)=>console.log(data));
+    socket.on('ranking', (data)=>console.log(data));
   }
 }

@@ -7,7 +7,7 @@ import * as socketIo from 'socket.io-client';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'NgSocket';
+  title = 'DEALER DETAILS';
   show_log = false;
   show_rankings = false;
   togglelogs() {   

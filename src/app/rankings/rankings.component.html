@@ -1,0 +1,20 @@
+<h2>Dealer Rankings</h2>
+
+  <table style="width:100%">
+    <tr>
+      <th>Dealer ID</th>
+      <th>Hands Per Hour</th>
+      <th>Difference from Casino Avg</th>
+      <th>Total Hands</th>
+      
+     
+    </tr>
+    <tr *ngFor="let a_log of rankings">
+      <td>{{a_log["Dealer ID"]}}</td>
+      <td>{{a_log["Hands Per Hour"]}}</td>
+      <td>{{a_log["Difference from Casino Avg"]}}</td>
+      <td>{{a_log["Total Hands"]}}</td>
+     
+    </tr>
+
+  </table>

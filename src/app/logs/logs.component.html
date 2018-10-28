@@ -1,0 +1,25 @@
+<h2>Dealer Logs</h2>
+
+  <table style="width:100%">
+    <tr>
+      <th>Employee ID</th>
+      <th>Table</th>
+      <th>Game</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Total Time</th>
+      <th>Hands Dealt</th>
+     
+    </tr>
+    <tr *ngFor="let a_log of dealer_log">
+      <td>{{a_log["Employee ID"]}}</td>
+      <td>{{a_log.Table}}</td>
+      <td>{{a_log.Game}}</td>
+      <td>{{a_log["Start Time"]}}</td>
+      <td>{{a_log["End Time"]}}</td>
+      <td>{{a_log["Total Time"]}}</td>
+      <td>{{a_log["Hands Dealt"]}}</td>
+    </tr>
+
+  </table>
+ 

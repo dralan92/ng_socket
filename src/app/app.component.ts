@@ -8,10 +8,18 @@ import * as socketIo from 'socket.io-client';
 })
 export class AppComponent implements OnInit {
   title = 'NgSocket';
-
+  show_log = false;
+  show_rankings = false;
+  togglelogs() {   
+   this.show_log = !this.show_log;
+  }
+  toggleRankings() {   
+    this.show_rankings = !this.show_rankings;
+   }
   ngOnInit() : void{
       
-   
-   //socket.on('ranking', (data)=>console.log(data));
+  
   }
+
+  
 }
